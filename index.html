@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta
+    name="description"
+    content="Jacob Mohan portfolio site featuring GTM engineering, AI automation, and revenue systems work."
+  />
+  <title>Jacob Mohan | GTM Engineer</title>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <link
+    rel="preconnect"
+    href="https://fonts.googleapis.com"
+  />
+  <link
+    rel="preconnect"
+    href="https://fonts.gstatic.com"
+    crossorigin
+  />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700;900&family=Inter:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+    rel="stylesheet"
+  />
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "on-primary-container": "#007255",
+            "inverse-on-surface": "#313030",
+            "inverse-surface": "#e5e2e1",
+            "tertiary-fixed-dim": "#e2c62e",
+            "on-tertiary-fixed": "#211b00",
+            "tertiary-fixed": "#ffe253",
+            "on-tertiary-fixed-variant": "#534600",
+            "on-tertiary-container": "#746300",
+            "primary-container": "#00ffc2",
+            "on-surface": "#e5e2e1",
+            "background": "#131313",
+            "outline-variant": "#3a4a43",
+            "on-secondary-fixed": "#002116",
+            "secondary-container": "#00543e",
+            "on-primary": "#003828",
+            "on-tertiary": "#393000",
+            "surface-container-low": "#1c1b1b",
+            "on-error": "#690005",
+            "on-primary-fixed-variant": "#00513c",
+            "primary": "#fbfffa",
+            "outline": "#83958c",
+            "on-secondary-fixed-variant": "#00513c",
+            "secondary": "#8fd5b7",
+            "inverse-primary": "#006c50",
+            "error-container": "#93000a",
+            "on-secondary": "#003828",
+            "surface-tint": "#00e1ab",
+            "surface-container-highest": "#353534",
+            "on-surface-variant": "#b9cbc1",
+            "surface-variant": "#353534",
+            "error": "#ffb4ab",
+            "surface-container": "#201f1f",
+            "surface-dim": "#131313",
+            "surface": "#131313",
+            "on-secondary-container": "#81c6aa",
+            "surface-bright": "#3a3939",
+            "surface-container-high": "#2a2a2a",
+            "on-error-container": "#ffdad6",
+            "primary-fixed-dim": "#00e1ab",
+            "tertiary-container": "#ffe149",
+            "on-primary-fixed": "#002116",
+            "secondary-fixed-dim": "#8fd5b7",
+            "secondary-fixed": "#aaf1d3",
+            "on-background": "#e5e2e1",
+            "surface-container-lowest": "#0e0e0e",
+            "tertiary": "#fffeff",
+            "primary-fixed": "#36ffc4"
+          },
+          fontFamily: {
+            headline: ["Space Grotesk"],
+            body: ["Inter"],
+            label: ["Inter"]
+          },
+          borderRadius: {
+            DEFAULT: "0.125rem",
+            lg: "0.25rem",
+            xl: "0.5rem",
+            full: "0.75rem"
+          }
+        }
+      }
+    };
+  </script>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: #131313;
+      color: #e5e2e1;
+      font-family: "Inter", sans-serif;
+      overflow-x: hidden;
+    }
+
+    .material-symbols-outlined {
+      font-variation-settings: "FILL" 0, "wght" 300, "GRAD" 0, "opsz" 24;
+    }
+
+    .grid-pattern {
+      background-image: radial-gradient(circle, #3a4a43 1px, transparent 1px);
+      background-size: 32px 32px;
+    }
+
+    .exp-node.active {
+      background-color: #00ffc2;
+      box-shadow: 0 0 10px #00ffc2;
+      border-color: #00ffc2;
+    }
+
+    .experience-track {
+      top: 0.4rem;
+      bottom: 0.4rem;
+    }
+
+    @media (max-width: 767px) {
+      .experience-track {
+        left: 0.4rem;
+      }
+    }
+  </style>
+</head>
+<body class="font-body selection:bg-primary-container selection:text-on-primary-container">
+  <nav class="fixed top-0 z-50 w-full bg-neutral-950/80 backdrop-blur-xl shadow-[0_0_40px_rgba(0,255,194,0.06)]">
+    <div class="flex w-full max-w-full items-center justify-between px-6 py-4 md:px-8">
+      <a href="#top" class="font-headline text-xl font-black tracking-tighter text-emerald-400">JACOB MOHAN</a>
+      <div class="hidden items-center gap-8 md:flex">
+        <a class="font-headline text-sm font-bold uppercase tracking-tighter text-neutral-400 transition-colors hover:text-emerald-200" href="#systems">Systems</a>
+        <a class="font-headline text-sm font-bold uppercase tracking-tighter text-neutral-400 transition-colors hover:text-emerald-200" href="#capabilities">Capabilities</a>
+        <a class="font-headline text-sm font-bold uppercase tracking-tighter text-neutral-400 transition-colors hover:text-emerald-200" href="#experience">Experience</a>
+      </div>
+      <div class="flex items-center gap-3">
+        <a class="hidden bg-primary-container px-6 py-2 font-headline text-sm font-bold uppercase tracking-tighter text-on-primary-container transition-all duration-200 hover:bg-emerald-300 md:inline-flex" href="#systems">View Work</a>
+        <button
+          id="mobile-menu-button"
+          class="inline-flex rounded border border-emerald-500/20 p-2 text-emerald-300 md:hidden"
+          type="button"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+          aria-label="Open menu"
+        >
+          <span class="material-symbols-outlined">menu</span>
+        </button>
+      </div>
+    </div>
+    <div id="mobile-menu" class="hidden border-t border-emerald-500/10 bg-neutral-950 px-6 py-4 md:hidden">
+      <div class="flex flex-col gap-4">
+        <a class="font-headline text-sm font-bold uppercase tracking-tighter text-neutral-300" href="#systems">Systems</a>
+        <a class="font-headline text-sm font-bold uppercase tracking-tighter text-neutral-300" href="#capabilities">Capabilities</a>
+        <a class="font-headline text-sm font-bold uppercase tracking-tighter text-neutral-300" href="#experience">Experience</a>
+      </div>
+    </div>
+  </nav>
+
+  <aside class="fixed left-0 top-0 z-40 hidden h-full w-20 flex-col items-center gap-12 border-r border-emerald-500/10 bg-neutral-950 py-8 md:flex">
+    <div class="mt-16 flex flex-col items-center gap-8">
+      <div class="group relative">
+        <span class="material-symbols-outlined cursor-pointer rounded-lg bg-emerald-500/5 p-3 text-emerald-400">terminal</span>
+        <span class="absolute left-16 top-1/2 -translate-y-1/2 whitespace-nowrap bg-neutral-900 px-2 py-1 font-mono text-[10px] uppercase tracking-widest text-emerald-400 opacity-0 transition-opacity group-hover:opacity-100">system_id</span>
+      </div>
+      <div class="group relative">
+        <span class="material-symbols-outlined cursor-pointer p-3 text-neutral-600 transition-colors hover:text-emerald-300">list_alt</span>
+        <span class="absolute left-16 top-1/2 -translate-y-1/2 whitespace-nowrap bg-neutral-900 px-2 py-1 font-mono text-[10px] uppercase tracking-widest text-emerald-400 opacity-0 transition-opacity group-hover:opacity-100">logs</span>
+      </div>
+      <div class="group relative">
+        <span class="material-symbols-outlined cursor-pointer p-3 text-neutral-600 transition-colors hover:text-emerald-300">account_tree</span>
+        <span class="absolute left-16 top-1/2 -translate-y-1/2 whitespace-nowrap bg-neutral-900 px-2 py-1 font-mono text-[10px] uppercase tracking-widest text-emerald-400 opacity-0 transition-opacity group-hover:opacity-100">logic</span>
+      </div>
+    </div>
+  </aside>
+
+  <main id="top" class="px-4 pb-12 pt-24 sm:px-6 md:ml-20 md:px-12 lg:px-20 xl:px-24">
+    <section class="relative mb-24 flex min-h-[80vh] flex-col justify-center overflow-hidden border-l border-emerald-500/10 pl-5 sm:pl-8 md:min-h-[85vh] md:pl-16">
+      <div class="absolute right-0 top-0 -z-10 h-full w-1/2 grid-pattern opacity-10"></div>
+      <div class="mb-8 flex items-center gap-2">
+        <span class="h-2 w-2 animate-pulse rounded-full bg-emerald-400"></span>
+        <span class="font-mono text-[10px] uppercase tracking-[0.2em] text-emerald-400">SYSTEM_STATE: AUTHORITATIVE</span>
+      </div>
+      <div class="mx-auto w-full max-w-[1180px] lg:grid lg:grid-cols-[minmax(0,1fr)_minmax(0,360px)] lg:items-start lg:gap-10">
+        <div class="min-w-0">
+          <h1 class="mb-6 max-w-[12ch] font-headline text-5xl font-black leading-[0.9] tracking-tighter text-primary sm:text-6xl md:text-8xl xl:text-[9rem]">
+            JACOB MOHAN
+          </h1>
+          <div class="mb-6 font-headline text-xl font-bold uppercase tracking-tighter text-[#00FFC2] md:text-2xl">
+            GTM ENGINEER | AI AUTOMATION | REVENUE SYSTEMS
+          </div>
+          <div class="mb-10 max-w-4xl">
+            <div class="mb-4 font-mono text-[10px] uppercase tracking-[0.3em] text-emerald-400">01 / SYSTEM PHILOSOPHY</div>
+            <p class="font-body text-xl font-light leading-relaxed text-primary md:text-2xl">
+              I design GTM systems that structure acquisition, pipeline, and conversion into
+              <span class="font-bold italic text-emerald-400">predictable revenue workflows.</span>
+              My work focuses on building systems that produce outcomes, not just implementing tools.
+            </p>
+          </div>
+          <div class="grid gap-4 md:max-w-4xl md:grid-cols-3">
+            <div class="border border-emerald-500/10 bg-neutral-950/40 p-4">
+              <div class="mb-2 font-mono text-[10px] uppercase tracking-[0.25em] text-emerald-400/70">Current Focus</div>
+              <p class="text-sm text-neutral-300">AI-driven GTM systems across CRM, pipeline automation, and conversion workflows.</p>
+            </div>
+            <div class="border border-emerald-500/10 bg-neutral-950/40 p-4">
+              <div class="mb-2 font-mono text-[10px] uppercase tracking-[0.25em] text-emerald-400/70">Core Stack</div>
+              <p class="text-sm text-neutral-300">HubSpot, APIs, n8n, LLM agents, Python/Node.js, scraping, analytics pipelines.</p>
+            </div>
+            <div class="border border-emerald-500/10 bg-neutral-950/40 p-4">
+              <div class="mb-2 font-mono text-[10px] uppercase tracking-[0.25em] text-emerald-400/70">What I Build</div>
+              <p class="text-sm text-neutral-300">Systems for lead sourcing, enrichment, segmentation, messaging, A/B testing, and CRM-driven revenue workflows.</p>
+            </div>
+          </div>
+        </div>
+        <div class="mt-10 flex flex-col items-center gap-6 lg:mt-0 lg:pt-2 lg:items-center">
+          <div class="relative aspect-square w-[clamp(18rem,22vw,22rem)] max-w-full overflow-hidden rounded-[35%] border border-emerald-500/10 bg-neutral-900">
+            <img src="profile.png" alt="Jacob Mohan portrait" class="h-full w-full object-cover" />
+          </div>
+          <div class="flex w-full justify-center gap-6 text-[10px] uppercase tracking-[0.4em] text-emerald-400">
+            <a href="https://www.linkedin.com/in/jacob-mohan-6b0aa4338/" target="_blank" rel="noreferrer" class="underline decoration-emerald-400">LinkedIn</a>
+            <a href="https://github.com/Codingtheblocks" target="_blank" rel="noreferrer" class="underline decoration-emerald-400">GitHub</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="systems" class="mb-32">
+      <div class="mb-8 text-center font-mono text-[10px] uppercase tracking-[0.3em] text-emerald-400">02 / DEPLOYED_SYSTEMS</div>
+      <div class="space-y-1">
+        <div class="group flex flex-col items-start gap-8 border-l border-emerald-500/10 bg-surface-container-low p-6 transition-all hover:bg-surface-container sm:p-8 md:flex-row md:p-12">
+          <div class="w-full md:w-1/3">
+            <span class="mb-2 block font-mono text-xs tracking-widest text-emerald-400/50">SYSTEM_01</span>
+            <h3 class="mb-4 font-headline text-2xl font-black uppercase leading-tight tracking-tight">AI-Driven GTM System (Valhallan Esports)</h3>
+            <div class="flex flex-wrap gap-2">
+              <span class="bg-neutral-800 px-2 py-1 text-[10px] uppercase tracking-widest text-neutral-400">GTM Architecture</span>
+              <span class="bg-neutral-800 px-2 py-1 text-[10px] uppercase tracking-widest text-neutral-400">Subscriber Growth</span>
+            </div>
+            <div class="mt-4 text-[10px] uppercase tracking-[0.35em] text-emerald-400">
+              <a href="GTM-proposal.pdf" target="_blank" rel="noreferrer" class="underline decoration-emerald-400">View proposal</a>
+            </div>
+          </div>
+          <div class="grid w-full gap-6 sm:grid-cols-3 md:w-2/3 md:gap-8">
+            <div>
+              <span class="mb-2 block text-[10px] uppercase tracking-widest text-emerald-400">Problem</span>
+              <p class="text-sm text-neutral-400">Inconsistent subscriber growth and fragmented marketing workflows across channels.</p>
+            </div>
+            <div>
+              <span class="mb-2 block text-[10px] uppercase tracking-widest text-emerald-400">System</span>
+              <p class="text-sm text-neutral-400">Designed GTM system integrating landing pages, email campaigns, segmentation, and multi-touch workflows with AI-assisted messaging.</p>
+            </div>
+            <div class="border-l-2 border-emerald-400 bg-emerald-400/5 p-4">
+              <span class="mb-1 block text-[10px] font-bold uppercase tracking-widest text-emerald-400">Outcome</span>
+              <p class="text-xs leading-snug text-on-surface">Increased subscriber conversion ~30% | Reduced onboarding time ~60% | Established structured pipeline across acquisition to conversion</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="group flex flex-col gap-8 border-l border-emerald-500/10 bg-surface-container-low p-6 transition-all hover:bg-surface-container sm:p-8 md:p-12">
+          <div class="flex flex-col items-start gap-8 md:flex-row">
+            <div class="w-full md:w-1/3">
+              <span class="mb-2 block font-mono text-xs tracking-widest text-emerald-400/50">SYSTEM_02</span>
+              <h3 class="mb-4 font-headline text-2xl font-black uppercase leading-tight tracking-tight">GTM Automation Engine</h3>
+              <div class="mb-6 flex flex-wrap gap-2">
+                <span class="bg-neutral-800 px-2 py-1 text-[10px] uppercase tracking-widest text-neutral-400">Lead Sourcing</span>
+                <span class="bg-neutral-800 px-2 py-1 text-[10px] uppercase tracking-widest text-neutral-400">A/B Testing</span>
+                <span class="bg-neutral-800 px-2 py-1 text-[10px] uppercase tracking-widest text-neutral-400">LLM Pipeline</span>
+              </div>
+              <img
+                src="Homepage.JPG"
+                alt="GTM Automation Engine interface screenshot"
+                class="h-52 w-full border border-emerald-500/10 object-cover opacity-70 transition duration-500 hover:opacity-100"
+              />
+              <div class="mt-4 flex flex-wrap gap-4 text-[10px] uppercase tracking-[0.35em] text-emerald-400">
+                <a href="https://github.com/Codingtheblocks/gtm-automation-engine" target="_blank" rel="noreferrer" class="underline decoration-emerald-400">View repo</a>
+                <a href="https://codingtheblocks.github.io/gtm-automation-engine/" target="_blank" rel="noreferrer" class="underline decoration-emerald-400">Launch demo</a>
+              </div>
+            </div>
+            <div class="grid w-full gap-6 sm:grid-cols-3 md:w-2/3 md:gap-8">
+              <div>
+                <span class="mb-2 block text-[10px] uppercase tracking-widest text-emerald-400">Problem</span>
+                <p class="text-sm text-neutral-400">Manual lead sourcing, outreach, and A/B testing fragmented across tools.</p>
+              </div>
+              <div>
+                <span class="mb-2 block text-[10px] uppercase tracking-widest text-emerald-400">System</span>
+                <p class="text-sm text-neutral-400">Built AI-driven pipeline for lead sourcing, scoring, enrichment, and outreach with deterministic A/B testing and event-based tracking.</p>
+              </div>
+              <div class="self-start border-l-2 border-emerald-400 bg-emerald-400/5 p-4">
+                <span class="mb-1 block text-[10px] font-bold uppercase tracking-widest text-emerald-400">Outcome</span>
+                <p class="text-xs leading-snug text-on-surface">Structured outbound pipeline with measurable performance (CTR, open rate, variant testing) | Cost-aware enrichment optimizing CAC and campaign efficiency</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="group flex flex-col items-start gap-8 border-l border-emerald-500/10 bg-surface-container-low p-6 transition-all hover:bg-surface-container sm:p-8 md:flex-row md:p-12">
+          <div class="w-full md:w-1/3">
+            <span class="mb-2 block font-mono text-xs tracking-widest text-emerald-400/50">SYSTEM_03</span>
+            <h3 class="mb-4 font-headline text-2xl font-black uppercase leading-tight tracking-tight">AI Content &amp; Distribution System</h3>
+            <div class="flex flex-wrap gap-2">
+              <span class="bg-neutral-800 px-2 py-1 text-[10px] uppercase tracking-widest text-neutral-400">LLM Analysis</span>
+              <span class="bg-neutral-800 px-2 py-1 text-[10px] uppercase tracking-widest text-neutral-400">Automation</span>
+            </div>
+            <img
+              src="cli.JPG"
+              alt="AI content system interface preview"
+              class="mt-4 h-52 w-full border border-emerald-500/10 object-cover opacity-70 transition duration-500 hover:opacity-100"
+            />
+            <div class="mt-4 text-[10px] uppercase tracking-[0.35em] text-emerald-400">
+              <a href="https://github.com/Codingtheblocks/viralbrollautomation" target="_blank" rel="noreferrer" class="underline decoration-emerald-400">View repo</a>
+            </div>
+          </div>
+          <div class="grid w-full gap-6 sm:grid-cols-3 md:w-2/3 md:gap-8">
+            <div>
+              <span class="mb-2 block text-[10px] uppercase tracking-widest text-emerald-400">Problem</span>
+              <p class="text-sm text-neutral-400">Manual content creation and distribution limits consistency and growth.</p>
+            </div>
+            <div>
+              <span class="mb-2 block text-[10px] uppercase tracking-widest text-emerald-400">System</span>
+              <p class="text-sm text-neutral-400">Built signal-driven content pipeline using LLM analysis and automated generation workflows.</p>
+            </div>
+            <div class="border-l-2 border-emerald-400 bg-emerald-400/5 p-4">
+              <span class="mb-1 block text-[10px] font-bold uppercase tracking-widest text-emerald-400">Outcome</span>
+              <p class="text-xs leading-snug text-on-surface">Scalable content production system | Improved content velocity and consistency.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="capabilities" class="mb-32">
+      <div class="mb-8 font-mono text-[10px] uppercase tracking-[0.3em] text-emerald-400">03 / CAPABILITIES</div>
+      <div class="grid gap-1 md:grid-cols-3">
+        <div class="group bg-surface-container p-8 transition-colors hover:bg-surface-container-high">
+          <h3 class="mb-6 font-headline font-bold uppercase tracking-tight text-emerald-400">GTM Systems</h3>
+          <p class="font-mono text-sm leading-relaxed text-neutral-400">CRM workflows, pipeline automation, segmentation, A/B testing, campaign analytics</p>
+        </div>
+        <div class="group bg-surface-container p-8 transition-colors hover:bg-surface-container-high">
+          <h3 class="mb-6 font-headline font-bold uppercase tracking-tight text-emerald-400">AI Systems</h3>
+          <p class="font-mono text-sm leading-relaxed text-neutral-400">LLM agents, prompt design, RAG pipelines, model evaluation</p>
+        </div>
+        <div class="group bg-surface-container p-8 transition-colors hover:bg-surface-container-high">
+          <h3 class="mb-6 font-headline font-bold uppercase tracking-tight text-emerald-400">Engineering</h3>
+          <p class="font-mono text-sm leading-relaxed text-neutral-400">Python, Node.js, APIs, scraping, Supabase, automation pipelines</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience" class="relative mb-32">
+      <div class="mb-8 font-mono text-[10px] uppercase tracking-[0.3em] text-emerald-400">04 / PROFESSIONAL_HISTORY</div>
+      <div id="experience-container" class="relative max-w-5xl">
+        <div class="experience-track absolute left-0 w-[2px] bg-neutral-800">
+          <div id="experience-progress" class="absolute left-0 top-0 w-full bg-[#00FFC2] shadow-[0_0_10px_#00FFC2] transition-all duration-75 ease-out" style="height: 0%"></div>
+        </div>
+        <div class="space-y-16">
+          <div class="exp-entry relative pl-10 sm:pl-12" data-id="tendem">
+            <div class="exp-node absolute left-[-4px] top-1.5 h-[10px] w-[10px] rounded-full border-2 border-neutral-800 bg-neutral-900 transition-all duration-300"></div>
+            <div class="mb-4 flex flex-col gap-2 xl:flex-row xl:items-baseline xl:justify-between">
+              <h4 class="max-w-3xl font-headline text-lg font-bold uppercase tracking-tight sm:text-xl">GTM Engineer | AI Automation &amp; Revenue Systems - Tendem</h4>
+              <div class="flex flex-col md:items-end">
+                <span class="whitespace-nowrap font-mono text-[10px] text-neutral-500">JAN 2026 — PRESENT</span>
+                <span class="font-mono text-[10px] uppercase tracking-widest text-emerald-400/60">Remote</span>
+              </div>
+            </div>
+            <div class="max-w-3xl text-sm leading-relaxed text-neutral-400">
+              <ul class="ml-4 list-outside list-disc space-y-1">
+                <li>Built AI-driven GTM workflows across CRM, segmentation, and campaigns</li>
+                <li>Designed automation systems improving pipeline consistency and efficiency</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="exp-entry relative pl-10 sm:pl-12" data-id="rws">
+            <div class="exp-node absolute left-[-4px] top-1.5 h-[10px] w-[10px] rounded-full border-2 border-neutral-800 bg-neutral-900 transition-all duration-300"></div>
+            <div class="mb-4 flex flex-col gap-2 xl:flex-row xl:items-baseline xl:justify-between">
+              <h4 class="max-w-3xl font-headline text-lg font-bold uppercase tracking-tight sm:text-xl">Search Quality &amp; Ranking Evaluation Specialist - RWS Group</h4>
+              <div class="flex flex-col md:items-end">
+                <span class="whitespace-nowrap font-mono text-[10px] text-neutral-500">AUG 2024 — PRESENT</span>
+                <span class="font-mono text-[10px] uppercase tracking-widest text-emerald-400/60">Remote</span>
+              </div>
+            </div>
+            <div class="max-w-3xl text-sm leading-relaxed text-neutral-400">
+              <ul class="ml-4 list-outside list-disc space-y-1">
+                <li>Evaluated search ranking using Needs Met and Page Quality frameworks</li>
+                <li>Assessed content trust, authority, and alignment with user intent</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="exp-entry relative pl-10 sm:pl-12" data-id="outlier">
+            <div class="exp-node absolute left-[-4px] top-1.5 h-[10px] w-[10px] rounded-full border-2 border-neutral-800 bg-neutral-900 transition-all duration-300"></div>
+            <div class="mb-4 flex flex-col gap-2 xl:flex-row xl:items-baseline xl:justify-between">
+              <h4 class="max-w-3xl font-headline text-lg font-bold uppercase tracking-tight sm:text-xl">LLM Evaluation &amp; Model Alignment Specialist - Outlier Scale AI</h4>
+              <div class="flex flex-col md:items-end">
+                <span class="whitespace-nowrap font-mono text-[10px] text-neutral-500">JAN 2022 — JAN 2025</span>
+                <span class="font-mono text-[10px] uppercase tracking-widest text-emerald-400/60">Remote</span>
+              </div>
+            </div>
+            <div class="max-w-3xl text-sm leading-relaxed text-neutral-400">
+              <ul class="ml-4 list-outside list-disc space-y-1">
+                <li>Evaluated and generated training data across chat, RAG, and multimodal tasks</li>
+                <li>Applied structured evaluation methods to improve model reliability</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="mt-20 w-full border-t border-emerald-500/5 bg-neutral-950 px-8 py-8">
+    <div class="flex w-full flex-col items-center justify-between gap-8 md:flex-row">
+      <div class="font-headline text-xl font-black tracking-tighter text-emerald-400">JACOB MOHAN</div>
+      <div class="flex flex-wrap justify-center gap-8">
+        <span class="font-mono text-[10px] uppercase tracking-widest text-emerald-400">Status: Operational</span>
+        <a class="font-mono text-[10px] uppercase tracking-widest text-neutral-500 transition-colors hover:text-emerald-400" href="https://github.com/Codingtheblocks" target="_blank" rel="noreferrer">GitHub</a>
+        <a class="font-mono text-[10px] uppercase tracking-widest text-neutral-500 transition-colors hover:text-emerald-400" href="https://www.linkedin.com/" target="_blank" rel="noreferrer">LinkedIn</a>
+        <a class="font-mono text-[10px] uppercase tracking-widest text-neutral-500 transition-colors hover:text-emerald-400" href="mailto:hello@example.com">Contact</a>
+      </div>
+      <div class="font-mono text-[10px] uppercase tracking-widest text-neutral-500">
+        &copy; 2026 SYSTEMS_AUTHORITY. AUTH_LEVEL: MASTER
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const experienceSection = document.getElementById("experience");
+    const experienceContainer = document.getElementById("experience-container");
+    const progressBar = document.getElementById("experience-progress");
+    const entries = document.querySelectorAll(".exp-entry");
+    const mobileMenuButton = document.getElementById("mobile-menu-button");
+    const mobileMenu = document.getElementById("mobile-menu");
+    const mobileLinks = mobileMenu.querySelectorAll("a");
+
+    function updateProgress() {
+      const viewportHeight = window.innerHeight;
+      const containerRect = experienceContainer.getBoundingClientRect();
+      const firstNode = entries[0]?.querySelector(".exp-node");
+      const lastNode = entries[entries.length - 1]?.querySelector(".exp-node");
+
+      if (firstNode && lastNode) {
+        const firstRect = firstNode.getBoundingClientRect();
+        const lastRect = lastNode.getBoundingClientRect();
+        const startY = firstRect.top + firstRect.height / 2;
+        const endY = lastRect.top + lastRect.height / 2;
+        const triggerY = viewportHeight * 0.45;
+        const totalDistance = Math.max(endY - startY, 1);
+        const progressPx = Math.max(0, Math.min(triggerY - startY, totalDistance));
+        const progress = (progressPx / totalDistance) * 100;
+
+        progressBar.style.height = `${progress}%`;
+      } else {
+        progressBar.style.height = "0%";
+      }
+
+      entries.forEach((entry) => {
+        const entryRect = entry.getBoundingClientRect();
+        const node = entry.querySelector(".exp-node");
+
+        if (entryRect.top < viewportHeight * 0.58) {
+          node.classList.add("active");
+        } else {
+          node.classList.remove("active");
+        }
+      });
+    }
+
+    function toggleMobileMenu() {
+      const isHidden = mobileMenu.classList.toggle("hidden");
+      mobileMenuButton.setAttribute("aria-expanded", String(!isHidden));
+    }
+
+    mobileMenuButton.addEventListener("click", toggleMobileMenu);
+    mobileLinks.forEach((link) => {
+      link.addEventListener("click", () => {
+        mobileMenu.classList.add("hidden");
+        mobileMenuButton.setAttribute("aria-expanded", "false");
+      });
+    });
+
+    window.addEventListener("scroll", updateProgress, { passive: true });
+    window.addEventListener("resize", updateProgress);
+    updateProgress();
+  </script>
+</body>
+</html>
