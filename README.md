@@ -19,7 +19,7 @@ Focused on building systems across acquisition, CRM, and conversion using LLM ag
 
 ## Selected Systems
 
-### AI-Driven GTM System (Valhallan Esports)
+### AI-Driven GTM System Esports Company
 - Designed and deployed GTM system across landing pages, email campaigns, and multi-touch workflows  
 - Built segmentation and messaging pipelines, increasing conversion ~30% and reducing onboarding time ~60%  
 
