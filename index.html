@@ -1,6 +1,13 @@
 <!DOCTYPE html>
 <html class="dark" lang="en">
 <head>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-96VT6CVRWS"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-96VT6CVRWS');
+  </script>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta
@@ -148,7 +155,7 @@
         <a class="font-headline text-sm font-bold uppercase tracking-tighter text-neutral-400 transition-colors hover:text-emerald-200" href="#experience">Experience</a>
       </div>
       <div class="flex items-center gap-3">
-        <a class="hidden bg-primary-container px-6 py-2 font-headline text-sm font-bold uppercase tracking-tighter text-on-primary-container transition-all duration-200 hover:bg-emerald-300 md:inline-flex" href="https://chatgpt.com/share/69cffabf-a36c-832b-94cf-f5edec496856" target="_blank" rel="noreferrer">Evaluate This Candidate</a>
+        <a class="hidden bg-primary-container px-6 py-2 font-headline text-sm font-bold uppercase tracking-tighter text-on-primary-container transition-all duration-200 hover:bg-emerald-300 md:inline-flex" href="https://chatgpt.com/share/69cffabf-a36c-832b-94cf-f5edec496856" target="_blank" rel="noreferrer" data-analytics-link="candidate-eval-nav">Evaluate This Candidate</a>
         <button
           id="mobile-menu-button"
           class="inline-flex rounded border border-emerald-500/20 p-2 text-emerald-300 md:hidden"
@@ -230,14 +237,15 @@
             <img src="profile.png" alt="Jacob Mohan portrait" class="h-full w-full object-cover" />
           </div>
           <div class="flex w-full justify-center gap-6 text-[10px] uppercase tracking-[0.4em] text-emerald-400">
-            <a href="https://www.linkedin.com/in/jacob-mohan-6b0aa4338/" target="_blank" rel="noreferrer" class="underline decoration-emerald-400">LinkedIn</a>
-            <a href="https://github.com/Codingtheblocks" target="_blank" rel="noreferrer" class="underline decoration-emerald-400">GitHub</a>
-            <a href="Jacob%20D.%20Mohan%20GTM%20Engineer.pdf" target="_blank" rel="noreferrer" class="underline decoration-emerald-400">Resume</a>
+            <a href="https://www.linkedin.com/in/jacob-mohan-6b0aa4338/" target="_blank" rel="noreferrer" class="underline decoration-emerald-400" data-analytics-link="linkedin-hero">LinkedIn</a>
+            <a href="https://github.com/Codingtheblocks" target="_blank" rel="noreferrer" class="underline decoration-emerald-400" data-analytics-link="github-hero">GitHub</a>
+            <a href="Jacob%20D.%20Mohan%20GTM%20Engineer.pdf" target="_blank" rel="noreferrer" class="underline decoration-emerald-400" data-analytics-link="resume-hero">Resume</a>
           </div>
           <a
             href="https://chatgpt.com/share/69cffabf-a36c-832b-94cf-f5edec496856"
             target="_blank"
             rel="noreferrer"
+            data-analytics-link="candidate-eval-hero"
             class="inline-flex w-full items-center justify-center bg-primary-container px-6 py-2 font-headline text-sm font-bold uppercase tracking-tighter text-on-primary-container transition-all duration-200 hover:bg-emerald-300"
           >Evaluate This Candidate</a>
           <p class="max-w-[34ch] text-center text-xs text-neutral-400">Save time get a breakdown of strengths, gaps, and role fit in seconds</p>
@@ -292,8 +300,8 @@
                 class="h-52 w-full border border-emerald-500/10 object-cover opacity-70 transition duration-500 hover:opacity-100"
               />
               <div class="mt-4 flex flex-wrap gap-4 text-[10px] uppercase tracking-[0.35em] text-emerald-400">
-                <a href="https://github.com/Codingtheblocks/gtm-automation-engine" target="_blank" rel="noreferrer" class="underline decoration-emerald-400">View repo</a>
-                <a href="https://codingtheblocks.github.io/gtm-automation-engine/" target="_blank" rel="noreferrer" class="underline decoration-emerald-400">Launch demo</a>
+              <a href="https://github.com/Codingtheblocks/gtm-automation-engine" target="_blank" rel="noreferrer" class="underline decoration-emerald-400" data-analytics-link="repo-gtm-automation-engine">View repo</a>
+              <a href="https://codingtheblocks.github.io/gtm-automation-engine/" target="_blank" rel="noreferrer" class="underline decoration-emerald-400" data-analytics-link="demo-gtm-automation-engine">Launch demo</a>
               </div>
             </div>
             <div class="grid w-full gap-6 sm:grid-cols-3 md:w-2/3 md:gap-8">
@@ -327,7 +335,7 @@
               class="mt-4 h-52 w-full border border-emerald-500/10 object-cover opacity-70 transition duration-500 hover:opacity-100"
             />
             <div class="mt-4 text-[10px] uppercase tracking-[0.35em] text-emerald-400">
-              <a href="https://github.com/Codingtheblocks/viralbrollautomation" target="_blank" rel="noreferrer" class="underline decoration-emerald-400">View repo</a>
+              <a href="https://github.com/Codingtheblocks/viralbrollautomation" target="_blank" rel="noreferrer" class="underline decoration-emerald-400" data-analytics-link="repo-ai-content-distribution">View repo</a>
             </div>
           </div>
           <div class="grid w-full gap-6 sm:grid-cols-3 md:w-2/3 md:gap-8">
@@ -433,8 +441,8 @@
       <div class="font-headline text-xl font-black tracking-tighter text-emerald-400">JACOB MOHAN</div>
       <div class="flex flex-wrap justify-center gap-8">
         <span class="font-mono text-[10px] uppercase tracking-widest text-emerald-400">Status: Operational</span>
-        <a class="font-mono text-[10px] uppercase tracking-widest text-neutral-500 transition-colors hover:text-emerald-400" href="https://github.com/Codingtheblocks" target="_blank" rel="noreferrer">GitHub</a>
-        <a class="font-mono text-[10px] uppercase tracking-widest text-neutral-500 transition-colors hover:text-emerald-400" href="https://www.linkedin.com/" target="_blank" rel="noreferrer">LinkedIn</a>
+        <a class="font-mono text-[10px] uppercase tracking-widest text-neutral-500 transition-colors hover:text-emerald-400" href="https://github.com/Codingtheblocks" target="_blank" rel="noreferrer" data-analytics-link="github-footer">GitHub</a>
+        <a class="font-mono text-[10px] uppercase tracking-widest text-neutral-500 transition-colors hover:text-emerald-400" href="https://www.linkedin.com/in/jacob-mohan-6b0aa4338/" target="_blank" rel="noreferrer" data-analytics-link="linkedin-footer">LinkedIn</a>
         <a class="font-mono text-[10px] uppercase tracking-widest text-neutral-500 transition-colors hover:text-emerald-400" href="mailto:hello@example.com">Contact</a>
       </div>
       <div class="font-mono text-[10px] uppercase tracking-widest text-neutral-500">
@@ -490,12 +498,26 @@
       mobileMenuButton.setAttribute("aria-expanded", String(!isHidden));
     }
 
+    function trackLinkClick(event) {
+      if (typeof gtag !== "function") return;
+
+      const link = event.currentTarget;
+      gtag("event", "portfolio_link_click", {
+        link_label: link.dataset.analyticsLink || link.textContent.trim(),
+        link_url: link.href,
+        link_text: link.textContent.trim()
+      });
+    }
+
     mobileMenuButton.addEventListener("click", toggleMobileMenu);
     mobileLinks.forEach((link) => {
       link.addEventListener("click", () => {
         mobileMenu.classList.add("hidden");
         mobileMenuButton.setAttribute("aria-expanded", "false");
       });
+    });
+    document.querySelectorAll("[data-analytics-link]").forEach((link) => {
+      link.addEventListener("click", trackLinkClick);
     });
 
     window.addEventListener("scroll", updateProgress, { passive: true });
